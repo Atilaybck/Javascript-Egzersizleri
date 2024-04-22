@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Listener Örneği</title>
+</head>
+<body>
+
+<div id="myDiv" style="width: 100px; height: 100px; background-color: lightblue;"></div>
+
+<script>
+  // Fare üzerine gelindiğinde çalışacak arrow function
+  document.getElementById('myDiv').addEventListener('mouseover', () => {
+    document.getElementById('myDiv').style.backgroundColor = 'lightcoral';
+  });
+
+  // Fare ayrıldığında çalışacak arrow function
+  document.getElementById('myDiv').addEventListener('mouseout', () => {
+    document.getElementById('myDiv').style.backgroundColor = 'lightblue';
+  });
+</script>
+
+</body>
+</html>

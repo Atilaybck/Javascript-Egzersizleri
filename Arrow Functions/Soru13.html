@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Listener Örneği</title>
+</head>
+<body>
+
+<input type="text" id="myInput" placeholder="Bir şeyler yazın...">
+
+<script>
+  // Input alanına yazıldığında çalışacak arrow function
+  document.getElementById('myInput').addEventListener('input', (event) => {
+    const girilenMetin = event.target.value;
+    console.log(`Girilen metin: ${girilenMetin}`);
+  });
+</script>
+
+</body>
+</html>
